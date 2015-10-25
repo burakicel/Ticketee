@@ -29,6 +29,23 @@ gem 'pubnub-js', '~> 3.7'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
+gem "airbrake"
+gem "bourbon", "~> 4.2.0"
+gem "delayed_job_active_record"
+gem "email_validator"
+gem "flutie"
+gem "high_voltage"
+gem "i18n-tasks"
+gem "neat", "~> 1.7.0"
+gem "newrelic_rpm", ">= 3.9.8"
+gem "normalize-rails", "~> 3.0.0"
+gem "rack-timeout"
+gem "recipient_interceptor"
+gem "refills"
+gem "simple_form"
+gem "title"
+gem "unicorn"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -40,8 +57,23 @@ gem "twitter-bootstrap-rails"
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem "awesome_print"
+  gem "bundler-audit", require: false
+  gem "byebug"
+  gem "dotenv-rails"
+  gem "factory_girl_rails"
+  gem "pry-rails"
+  gem "rspec-rails", "~> 3.1.0"
+end
+
+group :test do
+  gem "capybara-webkit", "1.2.0"
+  gem "database_cleaner"
+  gem "formulaic"
+  gem "launchy"
+  gem "shoulda-matchers", require: false
+  gem "timecop"
+  gem "webmock"
 end
 
 group :development do
