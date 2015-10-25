@@ -11,13 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151025085729) do
+ActiveRecord::Schema.define(version: 20151025104130) do
 
   create_table "quizzes", force: :cascade do |t|
     t.string   "title"
     t.string   "owner_email"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "access_key"
+    t.string   "access_password"
   end
 
 end
